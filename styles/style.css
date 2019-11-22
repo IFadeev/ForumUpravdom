@@ -1,0 +1,227 @@
+@font-face{
+  font-family: 'Museo-Sans';
+  src: url('../fonts/MuseoSansCyrl.otf');
+}  
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Museo-Sans';
+  font-weight: 900;  
+}
+
+.intro {
+  height: 150%;
+  min-height: 850px;
+  background-image: url("../img/backgrund-main/deposit.png");
+  background-position: 20% 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  width: 1200px;
+  background-color: #0097cc;
+
+  margin: 0 auto;
+  position: relative;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: -64px;
+  border-style: solid;
+  border-width: 32px; /* размер и форма */ 
+  border-color: #0097cc #0097cc transparent transparent;  
+  }
+
+  .header:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: -64px;
+    border-style: solid;
+    border-width: 32px; /* размер и форма */ 
+    border-color: #0097cc transparent transparent #0097cc;  
+    }
+
+.header__inner {
+  flex-direction: row;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  color: #fff;
+  text-transform: uppercase;
+  flex-direction: row;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 23px 15px;
+}
+
+.active,
+li:hover {
+  background-color: #1fbcf5;
+}
+
+.header-main {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("../img/backgrund-main/deposit.png");
+  background-position: 25% 70%;
+  background-repeat: no-repeat;
+}
+
+label {
+  margin: 50px;
+}
+
+.header-main:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(177, 211, 245, 0);
+  z-index: 1;
+}
+
+/*MAIN HEADER CONTENT*/
+
+.header-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  
+}
+
+.header-main__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 700px;
+  z-index: 2;
+}
+
+.header-main__left-first {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.date-text {
+  font-size: 1.5rem;
+}
+
+.header-main__left-second {
+  margin: 15px;
+
+  color: #5e5971;
+  letter-spacing: 0.02px;
+  font-size: 45px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.header-main__left-third {
+  max-width: 675px;
+  margin: 0 auto;
+  padding: 0 25px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 2;
+}
+
+.header-main__left-third p{
+  margin-top: 40px;
+  font-size: 19px; 
+}
+
+/*FROMS*/
+
+.header-main__right {
+  z-index:2;
+}
+
+form {
+  width: 100%;
+  padding: 15px;
+  height: 150%;
+  
+  background-color: rgba(255, 255, 255, 0.7);
+  
+}
+
+fieldset {
+  border:0 none;
+}
+
+legend {
+  color: #0097cc;
+  font-size: 36px;
+  border: 0;
+}
+
+.input-text {
+  width: 400px;
+  margin: 5px;
+  padding: 10px;
+}
+
+button {
+  display: block;
+  width: 349px;
+  height: 49px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 20px;
+  background-color: #5e5971;
+}
+
+button:hover {
+  background-color: #7f7a94;
+}
+
+form label input {
+  margin: 10px;
+  position: relative;
+}
+
+
+.text {
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+input[type="checkbox"] {
+  opacity: 1;
+  margin: 0 5px;
+}
+
+.checkbox-field {
+  max-width: 400px;
+}
+
+.po {
+  margin: 10px;
+  font-size: 17px;
+}
+
+input::placeholder {
+  font-size: 17px;
+}
